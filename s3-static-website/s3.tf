@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket_web" {
-  bucket = "my-test-s3-website-2018-05"
+  bucket = "${var.s3_bucket_name}"
   acl    = "private"
 
   versioning {
@@ -9,8 +9,8 @@ resource "aws_s3_bucket" "bucket_web" {
   force_destroy = true
 
   website {
-    index_document = "index.html"
-    error_document = "error.html"
+    index_document = "${var.index_file}"
+    error_document = "${var.error_file}"
   }
 }
 
