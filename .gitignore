@@ -1,3 +1,6 @@
+[my_notes]
+**/*.notes
+
 [terraform]
 
 #  Local .terraform directories
