@@ -1,6 +1,9 @@
 [my_notes]
 **/*.notes
 
+[zip files]
+**/*.zip
+
 [terraform]
 
 #  Local .terraform directories
